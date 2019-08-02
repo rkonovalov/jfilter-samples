@@ -1,0 +1,8 @@
+# Project exclude paths
+/dynamic-filter/target/
+/dynamic-session-filter/target/
+/full-controller-filter/target/
+/session-strategy-filter/target/
+/simple-filter/target/
+/target/
+/xml-configured-filter/target/
