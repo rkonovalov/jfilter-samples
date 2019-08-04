@@ -3,13 +3,18 @@ package jfilter.controller;
 import com.jfilter.filter.FieldFilterSetting;
 import com.jfilter.filter.FilterBehaviour;
 import com.jfilter.filter.SessionStrategy;
-import jfilter.support.dto.*;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
+import jfilter.support.dto.User;
 import jfilter.support.mock.MockUtils;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+import springfox.documentation.annotations.ApiIgnore;
 
 import javax.servlet.http.HttpSession;
 
+@Api(tags = {"session-controller-filter"})
 @RequestMapping("/session-controller-filter/users")
 @RestController
 public class SessionStrategyFilterController {
@@ -19,7 +24,7 @@ public class SessionStrategyFilterController {
 
 
     /**
-     * Get user details by role
+     * Get user details by using multiple SessionStrategy filters
      * <p>
      * Get user password information by id
      * And filter user object fields by role
@@ -37,6 +42,7 @@ public class SessionStrategyFilterController {
      * @param session {@link HttpSession}
      * @return serialized User object
      */
+    @ApiOperation(value = "", notes = "Get user details by using multiple SessionStrategy filters")
     @SessionStrategy(attributeName = SESSION_ATTRIBUTE, attributeValue = SESSION_ROLE_ADMIN, ignoreFields = {
             @FieldFilterSetting(fields = {"id", "password", "address"}, behaviour = FilterBehaviour.KEEP_FIELDS)
     })
@@ -45,7 +51,8 @@ public class SessionStrategyFilterController {
             @FieldFilterSetting(fields = {"id", "email"}, behaviour = FilterBehaviour.KEEP_FIELDS)
     })
     @RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public User getUserDetailsByRole(@PathVariable(name = "id") Integer id, @RequestParam(name = "role") String role, HttpSession session) {
+    public User getUserDetailsByRole(@ApiIgnore HttpSession session, @ApiParam(defaultValue = "1") @PathVariable(name = "id") Integer id,
+                                     @ApiParam(allowableValues = "admin, customer") @RequestParam(name = "role") String role) {
 
         //Set role from request in session attribute
         //And session filter will select necessary SessionStrategy by depending SESSION_ATTRIBUTE
