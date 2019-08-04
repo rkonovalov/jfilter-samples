@@ -7,6 +7,7 @@
 
 # About
 On this page you can view or download samples of using JFilter module.
+Project based on Spring Boot and Swagger UI
 
 Project GitHub [page](https://github.com/rkonovalov/jfilter)
 
