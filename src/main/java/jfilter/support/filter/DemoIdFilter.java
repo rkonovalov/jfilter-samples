@@ -12,8 +12,8 @@ import java.util.Arrays;
 public class DemoIdFilter implements DynamicFilterEvent {
     @Override
     public void onRequest(Comparator<RequestSession, FilterFields> comparator) {
-        //If request has SOME_KEY in request params then try to filter fields "id", "password", "email" from object
-        comparator.compare((request -> request.getRequest().getParameterMap().containsKey("SOME_KEY")),
+        //If request has someKey in request params then try to filter fields "id", "password", "email" from object
+        comparator.compare((request -> request.getRequest().getParameterMap().containsKey("someKey")),
                 (result -> FilterFields.getFieldsBy(Arrays.asList("id", "password", "email", "address"))));
 
     }
