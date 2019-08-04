@@ -36,7 +36,7 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfo("JFIlter Samples", "", "1.0.15", "",
-                new Contact("Ruslan Konovalov", "", "rkonovalov86@gmail.com"), "Apache 2.0", "", Collections.emptyList());
+                new Contact("", "", ""), "Apache 2.0", "", Collections.emptyList());
     }
 
 }
