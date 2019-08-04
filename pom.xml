@@ -9,14 +9,6 @@
     <artifactId>jfilter-samples</artifactId>
     <packaging>pom</packaging>
     <version>1.0</version>
-    <modules>
-        <module>simple-filter</module>
-        <module>session-strategy-filter</module>
-        <module>xml-configured-filter</module>
-        <module>full-controller-filter</module>
-        <module>dynamic-filter</module>
-        <module>dynamic-session-filter</module>
-    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
