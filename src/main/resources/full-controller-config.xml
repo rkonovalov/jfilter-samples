@@ -3,8 +3,8 @@
         "-//json/json-ignore mapping DTD 1.0//EN"
         "https://rkonovalov.github.io/json-ignore-schema-1.1.dtd">
 <config>
-    <controller class-name="jfilter.controller.XmlConfiguredFilterController">
-        <strategy attribute-name="ROLE" attribute-value="admin" >
+    <controller class-name="jfilter.controller.FullControllerFilter">
+        <strategy attribute-name="role" attribute-value="admin" >
             <filter class="jfilter.support.dto.User" behaviour="KEEP_FIELDS">
                 <field name="id"/>
                 <field name="password"/>
@@ -19,7 +19,7 @@
             </filter>
         </strategy>
 
-        <strategy attribute-name="ROLE" attribute-value="customer" >
+        <strategy attribute-name="role" attribute-value="customer" >
             <filter class="jfilter.support.dto.User" behaviour="KEEP_FIELDS">
                 <field name="id"/>
                 <field name="email"/>
