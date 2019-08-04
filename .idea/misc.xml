@@ -12,7 +12,13 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/dynamic-filter/pom.xml" />
+        <option value="$PROJECT_DIR$/dynamic-session-filter/pom.xml" />
+        <option value="$PROJECT_DIR$/full-controller-filter/pom.xml" />
         <option value="$PROJECT_DIR$/jfilter-main/pom.xml" />
+        <option value="$PROJECT_DIR$/session-strategy-filter/pom.xml" />
+        <option value="$PROJECT_DIR$/simple-filter/pom.xml" />
+        <option value="$PROJECT_DIR$/xml-configured-filter/pom.xml" />
       </set>
     </option>
   </component>

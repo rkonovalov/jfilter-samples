@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpSession;
 
 //Define filtering to all methods in controller
-@FileFilterSetting(fileName = "simple-xml-config.xml")
+@FileFilterSetting(fileName = "full-controller-config.xml")
 
 @RequestMapping("/full-controller-filter/users")
 @RestController
-public class UserRestController {
+public class FullControllerFilter {
     private static final String SESSION_ATTRIBUTE = "ROLE";
 
     /**

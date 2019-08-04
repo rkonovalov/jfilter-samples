@@ -17,7 +17,7 @@ import java.util.Arrays;
 
 @RequestMapping("/dynamic-session-filter/users")
 @RestController
-public class UserRestController {
+public class DynamicSessionFilterController {
 
     /**
      * With using session dynamic filter

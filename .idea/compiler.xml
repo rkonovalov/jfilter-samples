@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="xml-configured-filter" />
-        <module name="dynamic-session-filter" />
-        <module name="simple-filter" />
-        <module name="dynamic-filter" />
-        <module name="full-controller-filter" />
-        <module name="session-strategy-filter" />
-      </profile>
-    </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="dynamic-filter" target="1.8" />
+      <module name="dynamic-session-filter" target="1.8" />
+      <module name="full-controller-filter" target="1.8" />
       <module name="jfiltermain" target="1.8" />
+      <module name="session-strategy-filter" target="1.8" />
       <module name="simple-field-filter" target="1.8" />
+      <module name="simple-filter" target="1.8" />
+      <module name="xml-configured-filter" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

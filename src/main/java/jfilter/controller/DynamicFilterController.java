@@ -1,7 +1,7 @@
 package jfilter.controller;
 
 import com.jfilter.filter.DynamicFilter;
-import jfilter.filter.DemoIdFilter;
+import jfilter.support.filter.DemoIdFilter;
 import jfilter.support.dto.*;
 import jfilter.support.mock.MockUtils;
 import org.springframework.http.MediaType;
@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.*;
 
 @RequestMapping("/dynamic-filter/users")
 @RestController
-public class UserRestController {
+public class DynamicFilterController {
 
-    /**
+    /*
      * With using custom DemoIdFilter dynamic filter
      *
      * Get user by id

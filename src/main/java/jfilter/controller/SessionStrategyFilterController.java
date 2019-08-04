@@ -12,7 +12,7 @@ import javax.servlet.http.HttpSession;
 
 @RequestMapping("/session-controller-filter/users")
 @RestController
-public class UserRestController {
+public class SessionStrategyFilterController {
     private static final String SESSION_ATTRIBUTE = "ROLE";
     private static final String SESSION_ROLE_ADMIN = "admin";
     private static final String SESSION_ROLE_CUSTOMER = "customer";

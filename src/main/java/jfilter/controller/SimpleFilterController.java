@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("/simple-filter/users")
 @RestController
-public class UserRestController {
+public class SimpleFilterController {
 
     /**
      * Without any filtration

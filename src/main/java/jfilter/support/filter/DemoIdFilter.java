@@ -1,4 +1,4 @@
-package jfilter.filter;
+package jfilter.support.filter;
 
 import com.comparator.Comparator;
 import com.jfilter.filter.DynamicFilterComponent;

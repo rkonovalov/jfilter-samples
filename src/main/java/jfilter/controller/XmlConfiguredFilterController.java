@@ -10,7 +10,7 @@ import javax.servlet.http.HttpSession;
 
 @RequestMapping("/xml-configured-filter/users")
 @RestController
-public class UserRestController {
+public class XmlConfiguredFilterController {
     private static final String SESSION_ATTRIBUTE = "ROLE";
 
     /**
@@ -31,7 +31,7 @@ public class UserRestController {
      * @param session {@link HttpSession}
      * @return serialized User object
      */
-    @FileFilterSetting(fileName = "simple-xml-config.xml")
+    @FileFilterSetting(fileName = "xml-config.xml")
     @RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public User getUserDetailsByRole(@PathVariable(name = "id") Integer id, @RequestParam(name = "role") String role, HttpSession session) {
 
