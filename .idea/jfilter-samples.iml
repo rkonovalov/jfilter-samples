@@ -4,5 +4,11 @@
     <facet type="Spring" name="Spring">
       <configuration />
     </facet>
+    <facet type="app-engine-flexible" name="Google App Engine Flexible">
+      <configuration>
+        <option name="appYamlPath" value="C:\Projects\jfilter-samples\src\main\appengine\app.yaml" />
+        <option name="dockerDirectory" value="C:\Projects\jfilter-samples\src\main\docker" />
+      </configuration>
+    </facet>
   </component>
 </module>
