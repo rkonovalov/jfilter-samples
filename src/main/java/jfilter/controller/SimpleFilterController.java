@@ -34,7 +34,7 @@ public class SimpleFilterController {
      */
     @ApiOperation(value = "", notes = "Get full user details without any filtration")
     @RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public User getUserById(@ApiParam(defaultValue = "1") @PathVariable(name = "id") Integer id) {
+    public User getUserById(@ApiParam(defaultValue = "1", required = true) @PathVariable(name = "id") Integer id) {
         return MockUtils.buildMockUser(id);
     }
 
@@ -53,7 +53,7 @@ public class SimpleFilterController {
     @ApiOperation(value = "", notes = "Get user details except \"id\", \"password\" and \"address\" fields")
     @FieldFilterSetting(fields = {"id", "password", "address"})
     @RequestMapping(value = "/{id}/contact", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public User getUserContactById(@ApiParam(defaultValue = "1") @PathVariable(name = "id") Integer id) {
+    public User getUserContactById(@ApiParam(defaultValue = "1", required = true) @PathVariable(name = "id") Integer id) {
         return MockUtils.buildMockUser(id);
     }
 
@@ -73,7 +73,7 @@ public class SimpleFilterController {
     @ApiOperation(value = "", notes = "Keep \"id\" and \"password\" fields from filtration")
     @FieldFilterSetting(fields = {"id", "password"}, behaviour = FilterBehaviour.KEEP_FIELDS)
     @RequestMapping(value = "/{id}/password", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public User getUserPasswordById(@ApiParam(defaultValue = "1") @PathVariable(name = "id") Integer id) {
+    public User getUserPasswordById(@ApiParam(defaultValue = "1", required = true) @PathVariable(name = "id") Integer id) {
         return MockUtils.buildMockUser(id);
     }
 
@@ -96,7 +96,7 @@ public class SimpleFilterController {
     @FieldFilterSetting(className = City.class, fields = {"id"}, behaviour = FilterBehaviour.KEEP_FIELDS)
     @FieldFilterSetting(className = Street.class, fields = {"id"}, behaviour = FilterBehaviour.KEEP_FIELDS)
     @RequestMapping(value = "/{id}/ids", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public User getUserIdsById(@ApiParam(defaultValue = "1") @PathVariable(name = "id") Integer id) {
+    public User getUserIdsById(@ApiParam(defaultValue = "1", required = true) @PathVariable(name = "id") Integer id) {
         return MockUtils.buildMockUser(id);
     }
 }

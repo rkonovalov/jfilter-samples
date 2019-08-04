@@ -51,8 +51,8 @@ public class SessionStrategyFilterController {
             @FieldFilterSetting(fields = {"id", "email"}, behaviour = FilterBehaviour.KEEP_FIELDS)
     })
     @RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public User getUserDetailsByRole(@ApiIgnore HttpSession session, @ApiParam(defaultValue = "1") @PathVariable(name = "id") Integer id,
-                                     @ApiParam(allowableValues = "admin, customer") @RequestParam(name = "role") String role) {
+    public User getUserDetailsByRole(@ApiIgnore HttpSession session, @ApiParam(defaultValue = "1", required = true)
+    @PathVariable(name = "id") Integer id, @ApiParam(allowableValues = "admin, customer") @RequestParam(name = "role") String role) {
 
         //Set role from request in session attribute
         //And session filter will select necessary SessionStrategy by depending SESSION_ATTRIBUTE

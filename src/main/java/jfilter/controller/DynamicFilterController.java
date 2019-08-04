@@ -30,7 +30,7 @@ public class DynamicFilterController {
     @ApiOperation(value = "", notes = "Filtering with using custom DemoIdFilter dynamic filter")
     @DynamicFilter(DemoIdFilter.class)
     @RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public User getUserById(@ApiParam(defaultValue = "1") @PathVariable(name = "id") Integer id,
+    public User getUserById(@ApiParam(defaultValue = "1", required = true) @PathVariable(name = "id") Integer id,
                             @ApiParam @RequestParam(name = "someKey", required = false) String someKey) {
         return MockUtils.buildMockUser(id);
     }

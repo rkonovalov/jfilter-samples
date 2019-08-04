@@ -41,8 +41,8 @@ public class FullControllerFilter {
      */
     @ApiOperation(value = "", notes = "Get user details by role using full-controller-config.xml config")
     @RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public User getUserDetailsByRole(@ApiIgnore HttpSession session, @ApiParam(defaultValue = "1") @PathVariable(name = "id") Integer id,
-                                     @ApiParam(allowableValues = "admin, customer") @RequestParam(name = "role") String role) {
+    public User getUserDetailsByRole(@ApiIgnore HttpSession session, @ApiParam(defaultValue = "1", required = true)
+    @PathVariable(name = "id") Integer id, @ApiParam(allowableValues = "admin, customer") @RequestParam(name = "role") String role) {
 
         //Set role from request in session attribute
         //And session filter will select necessary SessionStrategy by depending SESSION_ATTRIBUTE
@@ -62,6 +62,7 @@ public class FullControllerFilter {
      * Result:
      * {"id":4}
      * <p>
+     *
      * @param id      number of mock user
      * @param role    string value requester role
      * @param session {@link HttpSession}
@@ -69,8 +70,8 @@ public class FullControllerFilter {
      */
     @ApiOperation(value = "", notes = "Get user address details by role using full-controller-config.xml config")
     @RequestMapping(value = "/{id}/address", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public Address getUserAddressByRole(@ApiIgnore HttpSession session, @ApiParam(defaultValue = "1") @PathVariable(name = "id") Integer id,
-                                        @ApiParam(allowableValues = "admin, customer") @RequestParam(name = "role") String role) {
+    public Address getUserAddressByRole(@ApiIgnore HttpSession session, @ApiParam(defaultValue = "1", required = true)
+    @PathVariable(name = "id") Integer id, @ApiParam(allowableValues = "admin, customer") @RequestParam(name = "role") String role) {
 
         //Set role from request in session attribute
         //And session filter will select necessary SessionStrategy by depending SESSION_ATTRIBUTE

@@ -38,7 +38,8 @@ public class DynamicSessionFilterController {
     @ApiOperation(value = "", notes = "Filtering with using DynamicSessionFilter")
     @DynamicFilter(DynamicSessionFilter.class)
     @RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public User getUserById(@ApiIgnore HttpSession session, @ApiParam(defaultValue = "1") @PathVariable(name = "id") Integer id) {
+    public User getUserById(@ApiIgnore HttpSession session,
+                            @ApiParam(defaultValue = "1", required = true) @PathVariable(name = "id") Integer id) {
 
         session.setAttribute(DynamicSessionFilter.ATTRIBUTE_FILTER_FIELDS,
                 FilterFields.getFieldsBy(Arrays.asList("id", "password", "email", "address")));
