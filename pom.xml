@@ -7,7 +7,6 @@
 
     <groupId>com.github.rkonovalov</groupId>
     <artifactId>jfilter-samples</artifactId>
-    <packaging>pom</packaging>
     <version>1.0</version>
 
     <properties>
@@ -128,8 +127,8 @@
                 <artifactId>appengine-maven-plugin</artifactId>
                 <version>2.0.0-rc6</version>
                 <configuration>
-                    <version>rk-springboot3</version>
-                    <deploy.projectId>rk-springboot2</deploy.projectId>
+                    <version>jfilter-samples1</version>
+                    <deploy.projectId>jfilter-samples-248816</deploy.projectId>
                 </configuration>
             </plugin>
         </plugins>
