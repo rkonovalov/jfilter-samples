@@ -3,6 +3,7 @@ package jfilter.controller;
 import com.jfilter.components.DynamicSessionFilter;
 import com.jfilter.filter.DynamicFilter;
 import com.jfilter.filter.FilterFields;
+import com.jfilter.util.FilterUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -24,7 +25,10 @@ import java.util.Arrays;
 public class DynamicSessionFilterController {
 
     /**
-     * Filtering with using DynamicSessionFilter
+     * Filtering using DynamicSessionFilter
+     * <p>
+     * Passing filter properties through session attributes
+     *
      * <p>
      * Get user by id
      * Link: http://localhost:8080/dynamic-session-filter/users/100
@@ -35,17 +39,12 @@ public class DynamicSessionFilterController {
      * @param id number of mock user
      * @return serialized User object
      */
-    @ApiOperation(value = "", notes = "Filtering with using DynamicSessionFilter")
+    @ApiOperation(value = "", notes = "Filtering using DynamicSessionFilter and session")
     @DynamicFilter(DynamicSessionFilter.class)
     @RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public User getUserById(@ApiIgnore HttpSession session,
+    public User getDynamicSessionFilteredUserById(@ApiIgnore HttpSession session,
                             @ApiParam(defaultValue = "1", required = true) @PathVariable(name = "id") Integer id) {
-
-        session.setAttribute(DynamicSessionFilter.ATTRIBUTE_FILTER_FIELDS,
-                FilterFields.getFieldsBy(Arrays.asList("id", "password", "email", "address")));
-
+        FilterUtil.useFilter(session, FilterFields.getFieldsBy(Arrays.asList("id", "password", "email", "address")));
         return MockUtils.buildMockUser(id);
     }
-
-
 }
