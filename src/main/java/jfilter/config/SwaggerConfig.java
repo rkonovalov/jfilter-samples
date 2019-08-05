@@ -27,6 +27,7 @@ public class SwaggerConfig {
                 .apiInfo(apiInfo()).
         tags(new Tag("dynamic-filter", "Dynamic filter"),
                 new Tag("dynamic-session-filter", "Dynamic session filter"),
+                new Tag("dynamic-request-filter", "Dynamic request filter"),
                 new Tag("full-controller-filter", "Full controller filter"),
                 new Tag("session-controller-filter", "Session controller filter"),
                 new Tag("simple-filter", "Simple filter"),
@@ -35,9 +36,9 @@ public class SwaggerConfig {
     }
 
     private ApiInfo apiInfo() {
-        return new ApiInfo("JFIlter Samples", "", "1.0.15", "",
+        return new ApiInfo("JFIlter Samples", "", "1.0.16", "",
                 new Contact("", "", ""),
-                "Apache 2.0", "", Collections.emptyList());
+                "Apache 2.0", "https://opensource.org/licenses/Apache-2.0", Collections.emptyList());
     }
 
 }
