@@ -20,6 +20,11 @@ pipeline {
             steps {
                 sh 'ssh root@devops-slave.ddns.net \'uptime\''
             }
+        }        
+        stage("Third step") {
+            steps {
+                sh 'ssh root@devops-slave.ddns.net \'ifconfig\''
+            }
         }
     }
 }
