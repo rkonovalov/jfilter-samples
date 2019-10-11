@@ -8,10 +8,4 @@ public class JenkinsTest {
     public void testJenkinsTrue() {
         Assert.assertEquals(5, 5);
     }
-
-    @Test
-    public void testJenkinsFalse() {
-        //For test Jenkins pipeline
-        Assert.assertEquals(5, 10);
-    }
 }
