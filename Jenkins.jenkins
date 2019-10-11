@@ -56,6 +56,14 @@ pipeline {
             }
         }
 
+        stage ('Invoke_pipeline_pull') {
+            steps {
+                build job: 'jfilter-samples-pull-pipeline', parameters: [
+                        string(name: 'param1', value: "value1")
+                ]
+            }
+        }
+
 
     }
 }
