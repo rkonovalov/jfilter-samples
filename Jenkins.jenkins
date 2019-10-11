@@ -21,7 +21,7 @@ pipeline {
             steps {
                 echo " ============== start building image =================="
                 dir ('.') {
-                	sh 'docker build -t rkonovalov/jfilter-samples-pipe:latest . '
+                	sh 'docker build -t rkonovalov/jfilter-samples:latest . '
                 }
             }
         }
