@@ -11,20 +11,21 @@ pipeline {
         timestamps()
     }
     stages {
-        stage("First step") {
+       stage("Preparations") {
+			steps {
+				deleteDir() /* clean up our workspace */
+			}
+		}
+   
+         stage("create docker image") {
             steps {
-                sh 'ssh root@devops-slave.ddns.net \'hostname\''
+                echo " ============== start building image =================="
+                dir ('.') {
+                	sh 'docker build -t rkonovalov/jfilter-samples-pipe:latest . '
+                }
             }
         }
-        stage("Second step") {
-            steps {
-                sh 'ssh root@devops-slave.ddns.net \'uptime\''
-            }
-        }        
-        stage("Third step") {
-            steps {
-                sh 'ssh root@devops-slave.ddns.net \'ifconfig\''
-            }
-        }
+        
+        
     }
 }
