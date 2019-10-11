@@ -8,10 +8,4 @@ public class JenkinsTest {
     public void testJenkinsTrue() {
         Assert.assertEquals(5, 5);
     }
-
-    @Test
-    public void testJenkinsFalse() {
-        //Test should be failed, just for test Jenkins Pipe
-        Assert.assertEquals(5, 10);
-    }
 }
