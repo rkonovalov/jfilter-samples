@@ -3,37 +3,39 @@
 properties([disableConcurrentBuilds()])
 
 pipeline {
-    agent { 
+    agent {
         label 'master'
-        }
+    }
     triggers { pollSCM('* * * * *') }
     options {
         buildDiscarder(logRotator(numToKeepStr: '10', artifactNumToKeepStr: '10'))
         timestamps()
     }
-    stages {	   
-       stage('Build') {
+    stages {
+
+        stage('Test') {
             steps {
-		echo " ============== start Maven build =================="
-                sh 'mvn -B -DskipTests clean package'
-            }
-        }
-	    
-	stage('Test') {
-            steps {
+                echo " ============== start Tests =================="
                 sh 'mvn test'
             }
         }
-	    
-         stage("create docker image") {
+
+        stage('Build') {
             steps {
-                echo " ============== start building image =================="
-               
-                	sh 'docker build -t rkonovalov/jfilter-samples:latest . '
-                
+                echo " ============== start Maven build =================="
+                sh 'mvn -B -Dmaven.test.skip=true clean package'
             }
         }
-        
-        
+
+        stage("create docker image") {
+            steps {
+                echo " ============== start building image =================="
+
+                sh 'docker build -t rkonovalov/jfilter-samples:latest . '
+
+            }
+        }
+
+
     }
 }
