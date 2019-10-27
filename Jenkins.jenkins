@@ -1,6 +1,7 @@
 #!groovy
 // Check ub1 properties
 properties([disableConcurrentBuilds()])
+def imageName = "rkonovalov/jfilter-samples:tested"
 
 pipeline {
     agent {
@@ -42,7 +43,7 @@ pipeline {
             steps {
                 echo " ============== start building image =================="
 
-                sh 'docker build -t rkonovalov/jfilter-samples:tested . '
+                sh 'docker build -t ${imageName} . '
 
             }
         }
@@ -51,7 +52,7 @@ pipeline {
             steps {
                 echo " ============== start pushing image =================="
                 sh '''
-                docker push rkonovalov/jfilter-samples:tested
+                docker push ${imageName}
                 '''
             }
         }
