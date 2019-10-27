@@ -5,7 +5,7 @@ def imageName = "rkonovalov/jfilter-samples:tested"
 
 pipeline {
     agent {
-        label 'master'
+        label "master"
     }
     //triggers { pollSCM('* * * * *') }
     options {
@@ -17,14 +17,14 @@ pipeline {
         stage('Test') {
             steps {
                 echo " ============== start Tests =================="
-                sh 'mvn test'
+                sh "mvn test"
             }
         }
 
         stage('Build') {
             steps {
                 echo " ============== start Maven build =================="
-                sh 'mvn -B -Dmaven.test.skip=true clean package'
+                sh "mvn -B -Dmaven.test.skip=true clean package"
             }
         }
 
@@ -32,9 +32,7 @@ pipeline {
             steps {
                 echo " ============== docker login =================="
                 withCredentials([usernamePassword(credentialsId: 'dockerhub_rkonovalov', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
-                    sh """
-                    docker login -u $USERNAME -p $PASSWORD
-                    """
+                    sh "docker login -u $USERNAME -p $PASSWORD"
                 }
             }
         }
@@ -43,7 +41,7 @@ pipeline {
             steps {
                 echo " ============== start building image =================="
 
-                sh 'docker build -t ${imageName} . '
+                sh "docker build -t ${imageName} . "
 
             }
         }
@@ -51,9 +49,7 @@ pipeline {
         stage("docker push") {
             steps {
                 echo " ============== start pushing image =================="
-                sh '''
-                docker push ${imageName}
-                '''
+                sh "docker push ${imageName}"
             }
         }
 
