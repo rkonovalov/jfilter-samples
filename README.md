@@ -13,7 +13,6 @@ Project GitHub [page](https://github.com/rkonovalov/jfilter)
 
 Project main [page](https://rkonovalov.github.io/projects/jfilter/1.0.16/)
 
-
 ## Using
 After running Spring boot Application you can try all samples on
 http://localhost:8080/swagger-ui.html page
