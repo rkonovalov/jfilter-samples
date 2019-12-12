@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="jfilter-samples:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8d5ee465-084d-4849-a1b3-496580f4f20f" name="Default Changelist" comment="Added Appengine plugin">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jfilter-samples.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jfilter-samples.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Projects\jfilter-samples" />
+        <option value="C:\Projects\jfilter-samples\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1OpyfVYEt43QppB690RDY929DhO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="ACTIVE_CLOUD_PROJECT_ACCOUNT" value="rkonovalov86@gmail.com" />
+    <property name="ACTIVE_CLOUD_PROJECT_ID" value="jfilter-samples" />
+    <property name="ACTIVE_CLOUD_PROJECT_NAME" value="jfilter-samples" />
+    <property name="ACTIVE_CLOUD_PROJECT_NUMBER" value="540165073554" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/appengine" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.16504854" />
+    <property name="project.structure.side.proportion" value="0.35588974" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="RemoteServers" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="jfilter.config" />
+      <recent name="jfilter.controller" />
+      <recent name="jfilter" />
+      <recent name="simple.filter.config" />
+      <recent name="simple.filter.dto" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\jfilter-samples\src\main" />
+      <recent name="C:\Projects\jfilter-samples" />
+      <recent name="C:\Projects\jfilter-samples\out\artifacts\jfilter_samples_Web_exploded\WEB-INF" />
+      <recent name="C:\Projects\jfilter-samples\src\main\webapp\META-INF" />
+      <recent name="C:\Projects\jfilter-samples\src\main\webapp\WEB-INF" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn package appengine:deploy" />
+      <command value="mvn appengine:deploy" />
+      <command value="mvn clean package appengine:deploy" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Google Stackdriver Debug" type="GCPDebug" factoryName="Google Stackdriver Debug" CloudProjectName="jfilter-samples" GoogleUsername="rkonovalov86@gmail.com">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="jfilter-samples" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jfilter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="jfilter.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Google App Engine Deployment" type="gcp-app-engine-deploy" factoryName="Google App Engine Deployment" server-name="Google App Engine">
+      <deployment type="appengine-artifact-source" name="jfilter-samples:war" project="jfilter-samples-248816" version="auto">
+        <settings cloudProjectName="jfilter-samples-248816" environment="APP_ENGINE_FLEX" googleUsername="rkonovalov86@gmail.com" moduleName="jfilter-samples" stagedArtifactName="" userSpecifiedArtifactPath="" version="" />
+      </deployment>
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Google App Engine Standard Local Server5" type="gcp-app-engine-local-run" factoryName="Local" APPLICATION_SERVER_NAME="AppEngine Dev 1.9.74" ALTERNATIVE_JRE_ENABLED="false">
+      <server-settings />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63562" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Google App Engine Deployment.Google App Engine Deployment" />
+      <item itemvalue="Google App Engine Standard Local Server.Google App Engine Standard Local Server5" />
+      <item itemvalue="Google Stackdriver Debug.Google Stackdriver Debug" />
+      <item itemvalue="Spring Boot.Application" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@30478f8d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d5ee465-084d-4849-a1b3-496580f4f20f" name="Default Changelist" comment="" />
+      <created>1564688935417</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1564688935417</updated>
+      <workItem from="1564688938023" duration="8628000" />
+      <workItem from="1564706768128" duration="1000" />
+      <workItem from="1564706983073" duration="185000" />
+      <workItem from="1564707204515" duration="92000" />
+      <workItem from="1564707326209" duration="7627000" />
+      <workItem from="1564752351415" duration="1860000" />
+      <workItem from="1564765304158" duration="662000" />
+      <workItem from="1564767448929" duration="599000" />
+      <workItem from="1564781051366" duration="599000" />
+      <workItem from="1564876994155" duration="133000" />
+      <workItem from="1564877153659" duration="5000" />
+      <workItem from="1564879419989" duration="12298000" />
+      <workItem from="1564932158581" duration="9073000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added idea config">
+      <created>1564754023094</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1564754023094</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added README file">
+      <created>1564754043167</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1564754043167</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Removed unused modules">
+      <created>1564879588308</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564879588308</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added Spring boot config class">
+      <created>1564930527904</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564930527904</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added Swagger dependency">
+      <created>1564930604895</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1564930604895</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added Swagger config class">
+      <created>1564930625661</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1564930625661</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added xml filter configuration files">
+      <created>1564930657794</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1564930657794</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Moved @EnableJsonFilter annotation in Spring boot config class">
+      <created>1564930727572</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1564930727572</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Renamed key variable">
+      <created>1564930815534</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1564930815534</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added sample controllers with samples of JFilter module using">
+      <created>1564930910483</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1564930910483</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added required parameter in ApiParam annotation for id parameter">
+      <created>1564931234557</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1564931234557</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added &quot;Using&quot; paragraph">
+      <created>1564931416382</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1564931416382</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Changed &quot;About&quot; paragraph">
+      <created>1564931999590</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1564931999590</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Removed contact information">
+      <created>1564932082109</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1564932082109</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Removed contact information">
+      <created>1564932227640</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1564932227640</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added Appengine config">
+      <created>1564936846229</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1564936846229</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added Appengine config">
+      <created>1564937016059</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1564937016059</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added Appengine plugin">
+      <created>1564938385173</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1564938385173</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added idea config" />
+    <MESSAGE value="Added README file" />
+    <MESSAGE value="Removed unused modules" />
+    <MESSAGE value="Added Spring boot config class" />
+    <MESSAGE value="Added Swagger dependency" />
+    <MESSAGE value="Added Swagger config class" />
+    <MESSAGE value="Added xml filter configuration files" />
+    <MESSAGE value="Moved @EnableJsonFilter annotation in Spring boot config class" />
+    <MESSAGE value="Renamed key variable" />
+    <MESSAGE value="Added sample controllers with samples of JFilter module using" />
+    <MESSAGE value="Added required parameter in ApiParam annotation for id parameter" />
+    <MESSAGE value="Added &quot;Using&quot; paragraph" />
+    <MESSAGE value="Changed &quot;About&quot; paragraph" />
+    <MESSAGE value="Removed contact information" />
+    <MESSAGE value="Added Appengine config" />
+    <MESSAGE value="Added Appengine plugin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Appengine plugin" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/jfilter/support/filter/DemoIdFilter.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/jfilter/controller/XmlConfiguredFilterController.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/rkonovalov/json-ignore/1.0.15/json-ignore-1.0.15.jar!/com/jfilter/filter/FileFilter.class</url>
+          <line>38</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/rkonovalov/json-ignore/1.0.15/json-ignore-1.0.15.jar!/com/jfilter/filter/FileFilter.class</url>
+          <line>45</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/rkonovalov/json-ignore/1.0.15/json-ignore-1.0.15.jar!/com/jfilter/filter/FileFilter.class</url>
+          <line>47</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/rkonovalov/json-ignore/1.0.15/json-ignore-1.0.15.jar!/com/jfilter/filter/FileFilter.class</url>
+          <line>71</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/rkonovalov/json-ignore/1.0.15/json-ignore-1.0.15.jar!/com/jfilter/filter/FileFilter.class</url>
+          <line>46</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
+    <option name="sizePresets">
+      <list>
+        <SizePreset>
+          <option name="caption" value="Phone" />
+          <option name="height" value="568" />
+          <option name="width" value="320" />
+        </SizePreset>
+        <SizePreset>
+          <option name="caption" value="Tablet" />
+          <option name="height" value="1024" />
+          <option name="width" value="768" />
+        </SizePreset>
+        <SizePreset>
+          <option name="caption" value="Desktop" />
+          <option name="height" value="900" />
+          <option name="width" value="1440" />
+        </SizePreset>
+      </list>
+    </option>
+  </component>
+</project>
