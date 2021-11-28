@@ -19,4 +19,4 @@ After running Spring boot Application you can try all samples on
 http://localhost:8080/swagger-ui.html page
 
 ## Online samples
-You can try online [samples](https://jfilter-samples-248816.appspot.com/swagger-ui.html)
+You can try online on [Heroku](https://jfilter-samples.herokuapp.com/swagger-ui.html)
